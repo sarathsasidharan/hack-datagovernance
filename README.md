@@ -38,3 +38,7 @@ Areas where data governance needs to be applied on a data lake
    - Access Controls on this layer are more fine grained for access to departments within the org for instance
    - This can be controlled centrally on an Landing Zone / Organization Level ( Or do we want this central, personal recom to go for Organization and push this data to the central team to function as a information rather than control to central team)
 
+
+# Model for Centralized Data Governance 
+
+(/docs/images/Governance_Overview.png)
