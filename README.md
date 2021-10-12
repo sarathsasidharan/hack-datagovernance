@@ -5,17 +5,20 @@ Garage Project
 
 1. Data Loading  ,Metadata during load ( schema , classification  , ownership , data quality)
 2. Data Preparation 
-3. Data Model / Exposure ( Access Controls , tag based policies)
+3. Data Quality (MDM)
+4. Data Model / Exposure ( Access Controls , tag based policies)
 
 
 # Data Platform / Central Data Governance 
 
 1. Data Loading  ,Metadata during load ( schema , classification  , ownership , data quality)
 2. Data Preparation 
-3. Data Model / Exposure ( Access Controls , tag based policies)
+3. Data Quality (MDM)
+4. Data Model / Exposure ( Access Controls , tag based policies)
 
 # Data Landing Zone Governance 
 
 1. Data Loading  ,Metadata during load ( schema , classification  , ownership , data quality)
 2. Data Preparation 
-3. Data Model / Exposure ( Access Controls , tag based policies)
+3. Data Quality (MDM)
+4. Data Model / Exposure ( Access Controls , tag based policies)
