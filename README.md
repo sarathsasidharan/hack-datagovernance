@@ -41,4 +41,17 @@ Areas where data governance needs to be applied on a data lake
 
 # Model for Centralized Data Governance 
 
+![Central Data Management](/docs/images/Governance_Central.png)
 
+In this model we envision a Central Data Governance Team which oversees the metadata and access on Individual subsidiaries. In this example we have a global team which has a central governance team which oversees 4 subsidiaries.
+
+For this case there are 4 branches for a company which are namely USA , Europe , Middle East and South Asia
+
+Although we have placed some products in there , the idea is to have a central catalog which acts as a bridge to transport metadata for other branches to access. The golden scenario which we foresee is that the tag based policies are in action. This would help to automatically control access for data sources at scale. 
+
+Two access scenarios need to be supported in this model :
+
+1. Data Sets are automatically classified and inherit the policies set at the central level.
+2. Data Set access is explicitly requested and the data owner decides if the requestor can be granted access to data
+
+We will dive into this is the next sections
