@@ -4,6 +4,9 @@
     "parameters": {
         "location": {
             "value": "westeurope"
+        },
+        "storageName": {
+            "value": "us"
         }
     }
 }
