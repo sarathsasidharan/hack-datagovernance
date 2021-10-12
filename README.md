@@ -41,4 +41,4 @@ Areas where data governance needs to be applied on a data lake
 
 # Model for Centralized Data Governance 
 
-
+![Central Data Management](/docs/images/Governance_Central.png)
