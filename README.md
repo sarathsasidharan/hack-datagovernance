@@ -46,3 +46,5 @@ Areas where data governance needs to be applied on a data lake
 In this model we envision a Central Data Governance Team which oversees the metadata and access on Individual subsidiaries. In this example we have a global team which has a central governance team which oversees 4 subsidiaries.
 
 For this case there are 4 branches for a company which are namely USA , Europe , Middle East and South Asia
+
+Although we have placed some products in there , the idea is to have a central catalog which acts as a bridge to transport metadata for other branches to access. The golden scenario which we forsee is that the tag based policies are in action. This would help to automatically control access for data sources at scale. 
