@@ -8,7 +8,7 @@ Garage Project
 3. Data Model / Exposure ( Access Controls , tag based policies)
 
 
-# Data Platorm / Central Data Governance 
+# Data Platform / Central Data Governance 
 
 # Data Landing Zone Governance 
 
