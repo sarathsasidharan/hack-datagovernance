@@ -1,4 +1,4 @@
-# hack-datagovernance
+# Hack Data Governance
 Garage Project  
 
 ## Data Goverenance 
