@@ -42,3 +42,7 @@ Areas where data governance needs to be applied on a data lake
 # Model for Centralized Data Governance 
 
 ![Central Data Management](/docs/images/Governance_Central.png)
+
+In this model we envision a Central Data Governance Team which oversees the metadata and access on Individual subsidiaries. In this example we have a global team which has a central governance team which oversees 4 subsidiaries.
+
+For this case there are 4 branches for a company which are namely USA , Europe , Middle East and South Asia
