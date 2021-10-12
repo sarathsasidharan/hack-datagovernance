@@ -17,3 +17,23 @@ resource centralMgmtResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01
   name :'${name}-mgmt'
   location:location
 }
+
+resource usResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
+  name :'${name}-us'
+  location:location
+}
+
+resource euResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
+  name :'${name}-eu'
+  location:location
+}
+
+resource meaResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
+  name :'${name}-mea'
+  location:location
+}
+
+resource saMgmtResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
+  name :'${name}-sa'
+  location:location
+}
