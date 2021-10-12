@@ -35,4 +35,6 @@ Areas where data governance needs to be applied on a data lake
 1. Data Loading  ,Metadata during load 
 2. Data Preparation 
 3. Data Model / Exposure ( Access Controls , tag based policies)
+   - Access Controls on this layer are more fine grained for access to departments within the org for instance
+   - This can be controlled centrally on an Landing Zone / Organization Level ( Or do we want this central, personal recom to go for Organization and push this data to the central team to function as a information rather than control to central team)
 
