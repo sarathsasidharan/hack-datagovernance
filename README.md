@@ -47,4 +47,11 @@ In this model we envision a Central Data Governance Team which oversees the meta
 
 For this case there are 4 branches for a company which are namely USA , Europe , Middle East and South Asia
 
-Although we have placed some products in there , the idea is to have a central catalog which acts as a bridge to transport metadata for other branches to access. The golden scenario which we forsee is that the tag based policies are in action. This would help to automatically control access for data sources at scale. 
+Although we have placed some products in there , the idea is to have a central catalog which acts as a bridge to transport metadata for other branches to access. The golden scenario which we foresee is that the tag based policies are in action. This would help to automatically control access for data sources at scale. 
+
+Two access scenarios need to be supported in this model :
+
+1. Data Sets are automatically classified and inherit the policies set at the central level.
+2. Data Set access is explicitly requested and the data owner decides if the requestor can be granted access to data
+
+We will dive into this is the next sections
