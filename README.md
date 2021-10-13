@@ -51,7 +51,7 @@ Although we have placed some products in there , the idea is to have a central c
 
 Two access scenarios need to be supported in this model :
 
-1. Data Sets are automatically classified and inherit the policies set at the central level , [Attribute Based Access](/docs/AttributeBasedAccess.md)
+1. Data Sets are automatically classified and inherit the policies set at the central level , [Tag Based Access](/docs/AttributeBasedAccess.md)
 2. Data Set access is explicitly requested and the data owner decides if the requestor can be granted access to data , [Granular Access](/docs/GranularAccess.md)
 
 
