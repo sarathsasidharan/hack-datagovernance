@@ -10,7 +10,7 @@ There are multiple options on different cloud vendors on how this can be achieve
 
 Coming back to our imaginary company which has it headquarters in West Europe , lets build the use case to get this into practise.
 
-# Data sharing Between US Branch and European Branch
+# Data sharing Between  Branches
 
 This is a highly debatable topic , especially due to regulators which prevent data exchange between these continents ,however for this case , let us assume our company is a restaurant chain. Consider US to be the higher revenue maker for this company , due to which new products are first launched in this market. Europe Branch would like to launch a new restaurant and would like to know which would be the best location in terms of taste preferences , demographics , age group in the neighbourhood to decide where do they want to launch this menu.
 
