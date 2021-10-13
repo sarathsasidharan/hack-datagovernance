@@ -2,14 +2,19 @@ targetScope = 'resourceGroup'
 
 @description('Storage Name')
 param storageName string 
+@description('Location')
 param location string
+@description('Specifies the Prefix')
+param prefix string = 'hackathon'
+
+// Define Vars
+var name = toLower('stor${prefix}${storageName}')
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01'= {
-  name: storageName
+  name: name
   location: location
   sku: {
     name: 'Standard_ZRS'
-    tier: 'Standard'
   }
   kind: 'StorageV2'
   properties: {

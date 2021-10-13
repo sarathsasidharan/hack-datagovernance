@@ -5,35 +5,31 @@ targetScope = 'subscription'
 @description('Specifies the environment of the deployment')
 param environment string = 'dev'
 @description('Specifies the location')
-param location string = 'dev'
-@description('Specifies the location')
+param location string = 'westeurope'
+@description('Specifies the Prefix')
 param prefix string = 'hackathon'
+@description('Storage Location Of the Branch')
+param locationBranch array
+
 
 
 // Variables
 var name = toLower('${prefix}-${environment}')
 
-resource centralMgmtResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
-  name :'${name}-mgmt'
-  location:location
-}
 
-resource usResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
-  name :'${name}-us'
+resource centralResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = [for branch in locationBranch: {
+  name :'${name}-${branch}'
   location:location
-}
+}]
 
-resource euResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
-  name :'${name}-eu'
-  location:location
-}
 
-resource meaResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
-  name :'${name}-mea'
-  location:location
-}
+module storageAccountCentralMgmt 'modules/storage.bicep' = [for branch in locationBranch: {
+  name: '${name}-${branch}'
+  scope : resourceGroup('${name}-${branch}')
+  params: {
+    storageName: branch
+    location: location
+    prefix: prefix
+   }
+}]
 
-resource saMgmtResourceGroup 'Microsoft.Resources/resourceGroups@2021-01-01' = {
-  name :'${name}-sa'
-  location:location
-}

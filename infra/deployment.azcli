@@ -1,0 +1,6 @@
+templateFile='infra/main.bicep'
+today=$(date +"%d-%b-%Y")
+deploymentName="hachkaton-"$today
+paramsFile='infra/params.json'
+
+az deployment sub create --name $deploymentName --location westeurope --template-file $templateFile --parameters $paramsFile

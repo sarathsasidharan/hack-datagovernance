@@ -5,8 +5,8 @@
         "location": {
             "value": "westeurope"
         },
-        "storageName": {
-            "value": "us"
+        "locationBranch": {
+            "value": ["central","us","we","mea","sa"]
         }
     }
 }
