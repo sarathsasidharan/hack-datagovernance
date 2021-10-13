@@ -14,4 +14,8 @@ Coming back to our imaginary company which has it headquarters in West Europe , 
 
 This is a highly debatable topic , especially due to regulators which prevent data exchange between these continents ,however for this case , let us assume our company is a restaurant chain. Consider US to be the higher revenue maker for this company , due to which new products are first launched in this market. Europe Branch would like to launch a new restaurant and would like to know which would be the best location in terms of taste preferences , demographics , age group in the neighbourhood to decide where do they want to launch this menu.
 
-For this scenario lets say the Customer Data (Aggregated) , Transaction and Store Locations are of Interest
+For this scenario lets say the Customer Data (Aggregated) , Transaction and Store Locations are of Interest. The dataset which has be chosen is having Sensitive Data , Semi Sensitive Data and Non Sensitive Data. Lets look at this by a case by case prespective.
+
+- Non Senstive Data Access 
+- Semi Sensitive Data Access
+- High Sensitive Data Access
