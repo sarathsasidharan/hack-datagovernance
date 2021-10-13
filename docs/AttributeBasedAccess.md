@@ -7,3 +7,11 @@ For large scale enterprises it would be beneficial for systems to be self suffic
 This needs to be well though of since , it is debatable to have automated access granted without a gated intervention. This auto classification could be applied for semi sensitive and non sensitive data.
 
 There are multiple options on different cloud vendors on how this can be achieved. For this hackathon , we will dive into [Azure Attribute Based Access Controls](https://docs.microsoft.com/en-us/azure/role-based-access-control/conditions-overview#:~:text=For%20more%20information%2C%20see%20Supplemental%20Terms%20of%20Use,principal%20access%20to%20a%20resource%20based%20on%20attributes.)
+
+Coming back to our imaginary company which has it headquarters in West Europe , lets build the use case to get this into practise.
+
+# Data sharing Between US Branch and European Branch
+
+This is a highly debatable topic , especially due to regulators which prevent data exchange between these continents ,however for this case , let us assume our company is a restaurant chain. Consider US to be the higher revenue maker for this company , due to which new products are first launched in this market. Europe Branch would like to launch a new restaurant and would like to know which would be the best location in terms of taste preferences , demographics , age group in the neighbourhood to decide where do they want to launch this menu.
+
+For this scenario lets say the Customer Data (Aggregated) , Transaction and Store Locations are of Interest
