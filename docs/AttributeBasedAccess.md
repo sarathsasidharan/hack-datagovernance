@@ -36,6 +36,6 @@ Azure purview is used to scan the data set to automatically tag dataset based on
 
 Next we need to add the  US storage account into the purview data sources , so that the stores dataset is visible for scanning. Trigger the scan operation on the US storage account. In order to be able to scan the data , the Managed Identity needs to have Blob Reader access and also check firewall / related settings if you face any errors.
 
-Two new Custom Classifications have been added to detect Non Sensitive US data. A new Classification rule is added to detect non sensitive US data. Last step is to define a new Scan Rule which includes the 2 new classifications which has been included in the previous step. [](/docs/images/classification.png)
+Two new Custom Classifications have been added to detect Non Sensitive US data. A new Classification rule is added to detect non sensitive US data. Last step is to define a new Scan Rule which includes the 2 new classifications which has been included in the previous step. ![Classification](/docs/images/classification.png)
 
 
