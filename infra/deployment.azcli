@@ -1,6 +1,12 @@
 templateFile='infra/main.bicep'
+templateFileArm='infra/arm/purview.json'
 today=$(date +"%d-%b-%Y")
 deploymentName="hachkaton-"$today
 paramsFile='infra/params.json'
+centralRG="hackathon-dev-central"
+
 
 az deployment sub create --name $deploymentName --location westeurope --template-file $templateFile --parameters $paramsFile
+
+# Deploy Purview , TODO : Convert this to Bicep when available
+az deployment group create --resource-group $centralRG --template-file $templateFileArm --parameters $paramsFile
