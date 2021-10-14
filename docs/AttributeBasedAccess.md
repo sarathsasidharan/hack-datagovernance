@@ -32,4 +32,4 @@ This is a two step approach :
 - Assign tag to a group who is allowed to read this data , based on the tag 
 
 #### Scan Storage Account to Tag data sets
-Azure purview is used to scan the data set to automatically tag dataset based on the scan / classification rules set inside purview.Deploy the purivew instance using this [script](/infra/arm/purview.json)
+Azure purview is used to scan the data set to automatically tag dataset based on the scan / classification rules set inside purview.Deploy the purivew instance using this [script](/infra/deployment.azcli)
