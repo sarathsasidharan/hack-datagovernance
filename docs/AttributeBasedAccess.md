@@ -22,4 +22,4 @@ For this scenario lets say the Customer Data (Aggregated) , Transaction and Stor
 
 ### Non Senitive Data Access 
 
-This scenario is to share data with least senstivity. Lets consider the data set Stores which has not so senstive information in it. Looking at the schema of stores , there is a store id , location field which pose not threat directly to a person or entity. Hence this can be classified as non sensitive, in our scenario let the tag name be  HACK_NON_SENSITIVE. To go ahead with this scenario , upload the file to a storage account in the US region which has been created by the [infra deployment script](/docs/infra/main.bicep)
+This scenario is to share data with least senstivity. Lets consider the data set Stores which has not so senstive information in it. Looking at the schema of stores , there is a store id , location field which pose not threat directly to a person or entity. Hence this can be classified as non sensitive, in our scenario let the tag name be  HACK_NON_SENSITIVE. To go ahead with this scenario , upload the file to a storage account in the US region which has been created by the [infra deployment script](/infra/main.bicep)
