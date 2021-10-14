@@ -30,3 +30,6 @@ Looking at the storage of US , we have 3 containers , namely for finance , sales
 This is a two step approach :
 - Scan the storage account to tag data sets 
 - Assign tag to a group who is allowed to read this data , based on the tag 
+
+#### Scan Storage Account to Tag data sets
+Azure purview is used to scan the data set to automatically tag dataset based on the scan / classification rules set inside purview
