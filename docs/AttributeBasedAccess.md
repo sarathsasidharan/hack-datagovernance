@@ -44,3 +44,4 @@ After the scan rule is run we will have the right classification done on the sch
 
 ![schema_class](/docs/images/schema_classification.PNG)
 
+Next step is to assign this tag also the the file which is stored in the storage account on the US side. For this we will need to use the custom tag 
