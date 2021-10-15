@@ -42,16 +42,16 @@ module storageAccountCentralMgmt 'modules/storage.bicep' = [for branch in locati
 
 
 //module synapseWorkspaces 'modules/synapse.bicep' = [for branch in locationBranch: {
-  name: '${name}-${branch}'
-  scope : resourceGroup('${name}-${branch}')
-  params: {
-    synapseWsName: branch
-    location: location
-    prefix: prefix
-    sqlLogin: sqlLogin
-    sqlPasswd: sqlPasswd
-    storageEndpointUrl: storageEndpointUrl
-    storageFs: storageFs
-   }
-
+//  name: '${name}-${branch}'
+//  scope : resourceGroup('${name}-${branch}')
+//  params: {
+//    synapseWsName: branch
+//    location: location
+//    prefix: prefix
+//    sqlLogin: sqlLogin
+//    sqlPasswd: sqlPasswd
+//    storageEndpointUrl: storageEndpointUrl
+//    storageFs: storageFs
+//   }
+//
 //}]
