@@ -40,5 +40,7 @@ Two new Custom Classifications have been added to detect Non Sensitive US data. 
 
 ![Classification](/docs/images/classification.PNG)
 
+After the scan rule is run we will have the right classification done on the schema of the dataset.
 
+![schema_class](/docs/images/schema_classification.PNG)
 
