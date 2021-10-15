@@ -10,7 +10,14 @@ param location string = 'westeurope'
 param prefix string = 'hackathon'
 @description('Storage Location Of the Branch')
 param locationBranch array
-
+@description('SQL Login')
+param sqlLogin string
+@description('SQL Pwd')
+param sqlPasswd string
+@description('Storage Location Of the Branch')
+param storageEndpointUrl string
+@description('Storage Location Of the Branch')
+param storageFs string
 
 
 // Variables
@@ -33,3 +40,18 @@ module storageAccountCentralMgmt 'modules/storage.bicep' = [for branch in locati
    }
 }]
 
+
+module synapseWorkspaces 'modules/synapse.bicep' = [for branch in locationBranch: {
+  name: '${name}-${branch}'
+  scope : resourceGroup('${name}-${branch}')
+  params: {
+    synapseWsName: branch
+    location: location
+    prefix: prefix
+    sqlLogin: sqlLogin
+    sqlPasswd: sqlPasswd
+    storageEndpointUrl: storageEndpointUrl
+    storageFs: storageFs
+   }
+
+}]

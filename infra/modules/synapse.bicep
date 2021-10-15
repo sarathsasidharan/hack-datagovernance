@@ -4,21 +4,26 @@ targetScope = 'resourceGroup'
 @description('Synapse Name')
 param synapseWsName string 
 @description('Identity type')
-param identityType string
+param identityType string = 'SystemAssigned'
 @description('Specifies the Location')
-param location string = 'hackathon'
+param location string = 'westeurope'
 @description('Specifies the Storage Endpoint')
-param storageEndpointUrl string = 'hackathon'
+param storageEndpointUrl string
 @description('Specifies the Storage File System')
-param storageFs string = 'hackathon'
+param storageFs string 
 @description('Specifies the Storage File System')
-param sqlLogin string = 'hackathon'
+param sqlLogin string 
 @description('Specifies the Storage File System')
-param sqlPasswd string = 'hackathon'
+param sqlPasswd string 
+@description('Specifies the Prefix')
+param prefix string = 'hackathon'
+
+// Define Vars
+var name = toLower('syn${prefix}${synapseWsName}')
 
 
 resource synapseWorkspace 'Microsoft.Synapse/workspaces@2021-05-01' = {
-  name: synapseWsName
+  name: name
   location: location
   identity: {
     type: identityType
