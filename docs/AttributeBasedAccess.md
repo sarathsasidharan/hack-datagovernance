@@ -44,4 +44,4 @@ After the scan rule is run we will have the right classification done on the sch
 
 ![schema_class](/docs/images/schema_classification.PNG)
 
-Next step is to assign this tag also the the file which is stored in the storage account on the US side. This is for now a decoupled approach ( not fully automated) and is a semi automated process. The first step is that these classifications have to be defined by the subsidiary and during the data load the file needs to be given the tag of "Non Sensitive US" data
+Assign this tag to the file which is stored in the storage account on the US side. This is for now a decoupled approach ( not fully automated) and is a semi automated . The first step is to  have a central list for classifications which have to be defined by the subsidiary. During the data load the file needs to be given the tag of "Non Sensitive US" data.
