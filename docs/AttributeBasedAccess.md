@@ -50,4 +50,6 @@ Assign this tag to the file which is stored in the storage account on the US sid
 - Semi Sensitive US
 - Highly Sensitive US
 
-During the data load the file needs to be given the tag of "Non Sensitive US" data.
+During the data load the file needs to be given the tag of "Non Sensitive US" data. This would require the blob to have a blob index / tag , attached to this during the file upload on the data lake. Manually adding this a no go , the idea is to use an Azure Data Factory Custom activity to help with this task.
+
+
