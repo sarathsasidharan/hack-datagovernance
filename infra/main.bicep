@@ -10,7 +10,7 @@ param location string = 'westeurope'
 param prefix string = 'hackathon'
 @description('Storage Location Of the Branch')
 param locationBranch array
-@description('Storage Location Of the Branch')
+@description('Storage Tags')
 param storageTags array
 
 
