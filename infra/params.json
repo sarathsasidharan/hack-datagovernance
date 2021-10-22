@@ -7,6 +7,9 @@
         },
         "locationBranch": {
             "value": ["central","us","we","mea","sa"]
+        },
+        "storageTags":{
+            "value": ["Non Sensitive","Semi Sensitive"," Highly Sensitive"]
         }
     }
 }
