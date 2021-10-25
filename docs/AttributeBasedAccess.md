@@ -2,6 +2,10 @@
 
 ## Data Set Automatically classified by tag based policies
 
+### Attribute Based Access Controls do not work for HNS Enabled accounts yet. To work around this we will use the Blob Storage Instead
+
+( Once this is available in ADLS Gen2 with HNS enabled will update this page)
+
 For large scale enterprises it would be beneficial for systems to be self sufficient and handle governance through automation. In order to achieve this tag based polices could be leveraged which automatically provides access to data , rather than having to wait for data owners to approve this manually.
 
 This needs to be well though of since , it is debatable to have automated access granted without a gated intervention. This auto classification could be applied for semi sensitive and non sensitive data.
@@ -51,5 +55,6 @@ Assign this tag to the file which is stored in the storage account on the US sid
 - Highly Sensitive US
 
 During the data load the file needs to be given the tag of "Non Sensitive US" data. This would require the blob to have a blob index / tag , attached to this during the file upload on the data lake. Manually adding this a no go , the idea is to use an Azure Data Factory Custom activity to help with this task.
+
 
 
